@@ -9,9 +9,9 @@
 
 | Integrante | Rol en el proyecto |
 |------------|-------------------|
-| [Nombre 1] | Desarrollo de componentes UI |
-| [Nombre 2] | Integración de API y CMS |
-| [Nombre 3] | Estilos, accesibilidad y documentación |
+| Nicolas Barrera | Desarrollo de componentes UI |
+| Matias leiva | Integración de API y CMS |
+| Keyla Grandez | Estilos, accesibilidad y documentación |
 
 ---
 

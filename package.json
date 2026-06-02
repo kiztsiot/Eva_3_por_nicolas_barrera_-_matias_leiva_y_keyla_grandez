@@ -1,0 +1,22 @@
+{
+  "name": "sercotec-centro-negocios",
+  "version": "1.0.0",
+  "description": "Landing page - Centro de Negocios Santiago SERCOTEC (React)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "json-server --watch db.json --port 3001",
+    "dev:full": "concurrently \"npm run api\" \"npm run dev\""
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.2.0",
+    "json-server": "^0.17.4",
+    "concurrently": "^8.2.2"
+  }
+}

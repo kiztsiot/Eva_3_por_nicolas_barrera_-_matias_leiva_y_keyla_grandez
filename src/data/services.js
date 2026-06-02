@@ -1,0 +1,137 @@
+// src/data/services.js
+// Datos que serían consumidos desde una API o CMS (ej: Strapi, Contentful)
+
+export const services = [
+  {
+    id: 1,
+    slug: 'acompanamiento-preventivo',
+    title: 'Acompañamiento Preventivo',
+    description:
+      'Asesorías periódicas para prolongar la vida útil de tu negocio y aumentar su productividad antes de que surjan problemas.',
+    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80',
+    icon: '🛡️',
+    categoria: 'Acompañamiento'
+  },
+  {
+    id: 2,
+    slug: 'acompanamiento-correctivo',
+    title: 'Acompañamiento Correctivo',
+    description:
+      'Resolución de dificultades y desafíos que afecten la gestión o el desarrollo de tu empresa con apoyo especializado.',
+    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80',
+    icon: '🔧',
+    categoria: 'Acompañamiento'
+  },
+  {
+    id: 3,
+    slug: 'gestion-empresarial',
+    title: 'Gestión Empresarial',
+    description:
+      'Orientación y capacitación en administración, finanzas, marketing digital e innovación con diagnósticos y planes de mejora.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+    icon: '📊',
+    categoria: 'Gestión'
+  },
+  {
+    id: 4,
+    slug: 'herramientas-digitales',
+    title: 'Herramientas Digitales',
+    description:
+      'Incorporación de herramientas digitales, optimización de procesos e implementación de estrategias de crecimiento.',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+    icon: '💻',
+    categoria: 'Eficiencia'
+  },
+  {
+    id: 5,
+    slug: 'vinculacion-empresarial',
+    title: 'Vinculación Empresarial',
+    description:
+      'Networking, articulación con instituciones públicas y privadas, y acceso a programas de financiamiento.',
+    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80',
+    icon: '🤝',
+    categoria: 'Vinculación'
+  },
+  {
+    id: 6,
+    slug: 'talleres-especializados',
+    title: 'Talleres Especializados',
+    description:
+      'Capacitaciones prácticas en áreas clave del negocio con seguimiento continuo y verificación de resultados.',
+    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80',
+    icon: '🎓',
+    categoria: 'Capacitación'
+  }
+]
+
+export const testimonials = [
+  {
+    id: 1,
+    name: 'María González',
+    empresa: 'Repostería Artesanal MG',
+    texto:
+      'El acompañamiento del Centro de Negocios fue clave para formalizar mi negocio. Aprendí a llevar mis finanzas y ahora tengo claridad total de mis ingresos.',
+    avatar: 'MG',
+    rating: 5
+  },
+  {
+    id: 2,
+    name: 'Carlos Fuentes',
+    empresa: 'Carpintería Fuentes e Hijos',
+    texto:
+      'Gracias a los talleres de marketing digital aumenté mis ventas en un 40%. El equipo siempre estuvo disponible para responder mis dudas.',
+    avatar: 'CF',
+    rating: 5
+  },
+  {
+    id: 3,
+    name: 'Ana Ramírez',
+    empresa: 'Estudio de Diseño AR',
+    texto:
+      'La vinculación con otras instituciones me permitió acceder a financiamiento que no sabía que existía. Muy recomendado para emprendedores.',
+    avatar: 'AR',
+    rating: 5
+  },
+  {
+    id: 4,
+    name: 'Roberto Soto',
+    empresa: 'Distribuidora Soto',
+    texto:
+      'El diagnóstico empresarial reveló áreas de mejora que no había considerado. El plan de acción que desarrollamos juntos transformó mi negocio.',
+    avatar: 'RS',
+    rating: 5
+  }
+]
+
+export const faqs = [
+  {
+    id: 1,
+    pregunta: '¿Quiénes pueden acceder a los servicios del Centro de Negocios?',
+    respuesta:
+      'Micro, pequeñas y medianas empresas de la Región Metropolitana que estén formalizadas o en proceso de formalización. El enfoque está en apoyar a empresas con potencial de crecimiento.'
+  },
+  {
+    id: 2,
+    pregunta: '¿Los servicios tienen algún costo?',
+    respuesta:
+      'La mayoría de nuestros servicios son gratuitos, financiados por SERCOTEC. Algunos programas específicos pueden tener un aporte del beneficiario. Contáctanos para obtener información detallada.'
+  },
+  {
+    id: 3,
+    pregunta: '¿Cuánto tiempo dura el acompañamiento?',
+    respuesta:
+      'El tiempo varía según el tipo de acompañamiento. Los programas preventivos pueden durar entre 3 y 6 meses, mientras que los correctivos se adaptan a la urgencia y complejidad de cada caso.'
+  },
+  {
+    id: 4,
+    pregunta: '¿Cómo puedo postular a los programas?',
+    respuesta:
+      'Puedes postular completando el formulario de contacto en este sitio, enviando un correo a centro.santiago@centrossercotec.cl o visitándonos directamente en Manuel Rodríguez Sur 749, Santiago.'
+  },
+  {
+    id: 5,
+    pregunta: '¿Ofrecen servicios online?',
+    respuesta:
+      'Sí, contamos con modalidad presencial e híbrida. Muchas de nuestras asesorías y talleres se realizan también de forma remota para mayor comodidad de los empresarios.'
+  }
+]

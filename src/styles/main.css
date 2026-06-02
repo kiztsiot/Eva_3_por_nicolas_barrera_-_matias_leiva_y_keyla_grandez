@@ -1,0 +1,188 @@
+/* ============================================
+   SERCOTEC - Centro de Negocios Santiago
+   Paleta oficial SERCOTEC
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+
+:root {
+  /* Colores oficiales SERCOTEC */
+  --color-primary:     #1B3366;   /* Azul oscuro oficial */
+  --color-secondary:   #E8450A;   /* Naranja/rojo oficial */
+  --color-accent:      #2557A7;   /* Azul medio */
+  --color-bg:          #F4F6FA;   /* Fondo gris azulado */
+  --color-surface:     #FFFFFF;
+  --color-text:        #1A1A2E;
+  --color-text-muted:  #5A6580;
+  --color-border:      #D8DEF0;
+
+  /* Tipografía */
+  --font-display: 'Montserrat', sans-serif;
+  --font-body:    'Open Sans', sans-serif;
+
+  /* Espaciado */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+
+  /* Radios */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(27,51,102,0.10);
+  --shadow-md: 0 8px 24px rgba(27,51,102,0.14);
+  --shadow-lg: 0 20px 48px rgba(27,51,102,0.18);
+
+  /* Transiciones */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); }
+h3 { font-size: clamp(1rem, 2vw, 1.3rem); }
+p  { margin-bottom: var(--space-sm); }
+
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid transparent;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+.btn-primary:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+.btn-secondary:hover {
+  background: white;
+  color: var(--color-primary);
+}
+
+.btn-gold {
+  background: var(--color-secondary);
+  color: white;
+  border-color: var(--color-secondary);
+}
+.btn-gold:hover {
+  background: #c73a08;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secciones */
+.section { padding: var(--space-2xl) 0; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+.section-title span {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-xs);
+  padding: 0.3rem 1rem;
+  background: rgba(232,69,10,0.08);
+  border-radius: 999px;
+}
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--space-sm);
+}
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--color-secondary);
+  border-radius: 2px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in { animation: fadeInUp 0.6s ease both; }
+
+@media (max-width: 768px) {
+  .container { padding: 0 var(--space-sm); }
+  .section   { padding: var(--space-xl) 0; }
+}
